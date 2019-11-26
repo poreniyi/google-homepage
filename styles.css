@@ -1,0 +1,43 @@
+div{
+
+    text-align: center;
+}
+#google_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+#google_logo{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+#buttons{
+    text-align: center;
+}
+#search_bar{
+    background:white url(search_icon.png) repeat;
+}
+#search_bar:hover{
+    text-shadow: gray;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+#topright{
+position: absolute;
+right: 0px;
+top: 0px;
+}
+#topleft{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
