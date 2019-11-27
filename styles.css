@@ -1,32 +1,44 @@
-div{
-
-    text-align: center;
-}
-#google_logo{
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+#googlelogodiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-/*
 #google_logo{
+    height:80px;
     display: block;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-}*/
+}
 #buttons{
+    color: #5F6368;
+    text-align: center;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+#search_bar_div{
     text-align: center;
 }
 #search_bar{
-    background:white url(search_icon.png) repeat;
+    background: url("search_icon.png") no-repeat left;
+    background-size: 22px;
+    border-radius: 200px;
+    width: 500px;
+    height: 35px;
+    margin: 30px;
 }
 #search_bar:hover{
-    text-shadow: gray;
+    box-shadow:-1px  1px 5px rgba(0, 0, 0, 0.2);
 }
 a{
     text-decoration: none;
     color: black;
+    margin: 20px;
 }
 a:hover{
     text-decoration: underline;
@@ -40,4 +52,49 @@ top: 0px;
     position: absolute;
     left: 0px;
     top: 0px;
+}
+.bottom_right{
+    color: black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.bottom_left{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#grayborder{
+    z-index: -1;
+    position: absolute;
+    bottom:0px;
+    opacity: 0.1;
+    width: 100%;
+    height: 40px;
+    background: gray;
+}
+#appsicon{
+    height: min-content;
+    width: 20px;
+}
+#sign_in_now{
+    padding: 5px 10px 10px 10px;
+    height: 30px;
+    color: white;
+    background: rgb(20, 137, 233);
+}
+#push{
+    height: 200px;
+}
+button{
+    height: 40px;
+    -moz-appearance: toolbarbutton;
+    background: #5F6368;
+    background-color:#f2f2f2;border: 1px solid#f2f2f2;
+    border-radius: 4px;
+}
+button:hover{
+   border:  2px solid rgb(223, 214, 214);
+  
 }
